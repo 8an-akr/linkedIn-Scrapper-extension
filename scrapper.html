@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Scrapper</title>
+    <link rel="stylesheet" href="scrapper.css">
+    <script src="scrapper.js" defer></script>
+</head>
+
+<body>
+    <button>LinkedIn</button>
+    <button>Sales Nav</button>
+    <br>
+    <label for="emailFormats">Choose a email format:</label>
+    <br>
+    <select id="emailFormats" name="emailFormats">
+  <option value="{first}.{last}">{first}.{last}</option>
+  <option value="{f}{last}">{f}{last}</option>
+  <option value="{first}{l}">{first}{l}</option>
+  <option value="{first}">{first}</option>
+  <option value="{first}_{last}">{first}_{last}</option>
+  </select>
+    <br>
+
+    <label for="domain">Domain:</label>
+    <input type="text" id="domain" name="domain">
+    <br>
+    <p>show:</p>
+    <input type="checkbox" name="entireName" id="entireName">
+    <label for="entireName">Entire name</label>
+    <br>
+    <input type="checkbox" name="email" id="email">
+    <label for="email">Email by format</label>
+    <br>
+    <input type="checkbox" name="role" id="role">
+    <label for="role">Role in company</label>
+    <br>
+    <button id="addPage">Add Page</button>
+</body>
+
+</html>
